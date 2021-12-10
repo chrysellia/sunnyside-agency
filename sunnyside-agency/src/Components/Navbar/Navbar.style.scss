@@ -1,0 +1,59 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.navbar-component {
+
+    .navbar-image {
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .arrow-icon {
+        position: fixed;
+        top: 15rem;
+        left: 39rem;
+    }
+
+    .navbar-menu {
+        padding: 2rem 1rem;
+        color: white;
+        display: flex;
+
+        .navbar-logo {
+            font-weight: bolder;
+            flex: auto;
+            font-size: 20px;
+        }
+
+        .list-menu {
+            display: flex;
+            align-items: center;
+
+            .list-item {
+                margin-right: 1rem;
+            }
+
+            .list-item-active {
+                color: hsl(212, 27%, 19%);
+                background-color: white;
+                border-radius: 3rem;
+                padding: 0.7rem 1rem;
+                font-family: 'Fraunces', serif;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .navbar-title {
+        padding-top: 3rem;
+        color: white;
+        font-weight: 900;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Fraunces', serif;
+        font-size: 40px;
+    }
+}
