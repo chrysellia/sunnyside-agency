@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Fraunces:wght@100;200;900&family=Roboto:wght@500&display=swap');
+
+
+.about-component {
+    .about-content {
+        display: flex;
+
+        .content-wrapper {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .content-text {
+                padding-left: 5rem;
+                padding-right: 5rem;
+
+                .text-title {
+                    color: hsl(212, 27%, 19%);
+                    font-family: 'Fraunces', serif;
+                    font-weight: 700;
+                    font-size: 40px;
+                }
+    
+                .text-description {
+                    color: hsl(210, 4%, 67%);
+                    font-size: 18px;
+                    font-weight: 400;
+                    
+                }
+    
+                .information-wrapper {
+                    display: flex;
+
+                    .text-information {
+                        color: hsl(212, 27%, 19%);
+                        font-size: 18px;
+                        font-weight: bold;
+                        background-color: hsl(7, 99%, 70%);
+                        border-radius: 3rem;
+                        padding: 0.2rem 1rem;
+                        margin-top: 2rem;
+                    }
+                } 
+            }
+        }
+
+        .content-image {
+            width: 50%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

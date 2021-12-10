@@ -1,0 +1,54 @@
+
+.stand-out-component {
+    .stand-out-content {
+        display: flex;
+
+        .stand-out-image {
+            width: 50%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .stand-out-wrapper {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .stand-out-text {
+                padding-left: 5rem;
+                padding-right: 5rem;
+
+                .stand-out-title {
+                    color: hsl(212, 27%, 19%);
+                    font-family: 'Fraunces', serif;
+                    font-weight: 700;
+                    font-size: 40px;
+                }
+    
+                .stand-out-description {
+                    color: hsl(210, 4%, 67%);
+                    font-size: 18px;
+                    font-weight: 400;
+                    
+                }
+    
+                .button-wrapper {
+                    display: flex;
+
+                    .button-information {
+                        color: hsl(212, 27%, 19%);
+                        font-size: 18px;
+                        font-weight: bold;
+                        background-color: hsl(7, 99%, 70%);
+                        border-radius: 3rem;
+                        padding: 0.2rem 1rem;
+                        margin-top: 2rem;
+                    }
+                } 
+            }
+        }
+    }
+}

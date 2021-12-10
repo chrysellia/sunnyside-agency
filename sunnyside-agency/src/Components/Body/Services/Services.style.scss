@@ -1,0 +1,65 @@
+.services-component {
+    .services-content {
+        display: flex;
+
+        .graphic-parent {
+            width: 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+                
+            .graphic-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                
+                .graphic-content {
+                    text-align: center;
+                    padding-top: 20rem;
+                    
+                    .graphic-title {
+                        color: hsl(167, 40%, 24%);
+                        font-family: 'Fraunces', serif;
+                        font-weight: 700;
+                        font-size: 20px;
+                    }
+    
+                    .graphic-description {
+                        color: hsl(167, 40%, 24%);
+                    }
+                }
+            }
+        }
+
+        .photography-parent {
+            width: 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            .photography-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+    
+                .photography-content {
+                    text-align: center;
+                    padding-top: 20rem;
+        
+                    .photography-title {
+                        color: hsl(198, 62%, 26%);
+                        font-family: 'Fraunces', serif;
+                        font-weight: 700;
+                        font-size: 20px;
+                    }
+        
+                    .photography-description {
+                        color: hsl(198, 62%, 26%);
+                    }
+                }
+            }
+        } 
+    }
+}
