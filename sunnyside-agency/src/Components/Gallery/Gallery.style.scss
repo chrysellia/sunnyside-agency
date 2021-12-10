@@ -1,0 +1,13 @@
+.gallery-component {
+    .gallery-image {
+        display: flex;
+
+        .image-item {
+            width: 25%;
+            
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
