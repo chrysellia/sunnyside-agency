@@ -17,7 +17,10 @@ const About = () => {
                             </p>
                         </div>
                         <div className="information-wrapper">
-                            <div className="text-information">LEARN MORE</div>
+                            <div className="text-information">
+                                <div className="text-content">LEARN MORE</div>
+                                <div className="text-style"></div>
+                            </div>
                         </div>
                     </div>
                 </div>

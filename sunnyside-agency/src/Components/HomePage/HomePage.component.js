@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../Navbar/Navbar.component'
 import Body from '../Body/Body.component'
 import Testimonials from '../Testimonials/Testimonials.component'
-import Gallery from '../Gallery/Gallery.component'
+import Projects from '../Projects/Projects.component'
 import Footer from '../Footer/Footer.component'
 
 const HomePage = () => {
@@ -11,7 +11,7 @@ const HomePage = () => {
             <Navbar/>
             <Body/>
             <Testimonials/>
-            <Gallery/>
+            <Projects/>
             <Footer/>
         </div>
     )

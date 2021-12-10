@@ -1,10 +1,10 @@
 import React from 'react';
-import './Gallery.style.scss';
+import './Projects.style.scss';
 
-const Gallery = () => {
+const Projects = () => {
     return (
-        <div className="gallery-component">
-            <div className="gallery-image">
+        <div className="projects-component">
+            <div className="projects-image">
                 <div className="image-item">
                     <img src="images/desktop/image-gallery-milkbottles.jpg"/>
                 </div>
@@ -22,4 +22,4 @@ const Gallery = () => {
     )
 }
 
-export default Gallery
+export default Projects

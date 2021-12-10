@@ -22,7 +22,10 @@ const StandOut = () => {
                             </p>
                         </div>
                         <div className="button-wrapper">
-                            <div className="button-information">LEARN MORE</div>
+                            <div className="button-information">
+                                <div className="button-text">LEARN MORE</div>
+                                <div className="button-style"></div>
+                            </div>
                         </div>
                     </div>
                 </div>

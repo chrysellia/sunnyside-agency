@@ -42,6 +42,12 @@
                 padding: 0.7rem 1rem;
                 font-family: 'Fraunces', serif;
                 font-weight: 600;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: hsl(200, 100%, 71.2%);
+                    color: white;
+                }
             }
         }
     }
