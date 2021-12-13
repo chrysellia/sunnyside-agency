@@ -6,25 +6,51 @@ const StandOut = () => {
         <div className="stand-out-component">
             <div className="stand-out-content">
 
-                {/* Image */}
-                <div className="stand-out-image">
-                    <img src="images/desktop/image-stand-out.jpg"/>
-                </div>
-                
-                {/* Text */}
-                <div className="stand-out-wrapper">
-                    <div className="stand-out-text">
-                        <div className="stand-out-title">Stand out to the right audience</div>
-                        <div className="stand-out-description">
-                            <p>
-                                Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, 
-                                we'll build and extend your brand in digital places.
-                            </p>
+                <div className="desktop-version">
+                    {/* Image */}
+                    <div className="stand-out-image">
+                        <img src="images/desktop/image-stand-out.jpg"/>
+                    </div>
+                    {/* Text */}
+                    <div className="stand-out-wrapper">
+                        <div className="stand-out-text">
+                            <div className="stand-out-title">Stand out to the right audience</div>
+                            <div className="stand-out-description">
+                                <p>
+                                    Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, 
+                                    we'll build and extend your brand in digital places.
+                                </p>
+                            </div>
+                            <div className="button-wrapper">
+                                <div className="button-information">
+                                    <div className="button-text">LEARN MORE</div>
+                                    <div className="button-style"></div>
+                                </div>
+                            </div>
                         </div>
-                        <div className="button-wrapper">
-                            <div className="button-information">
-                                <div className="button-text">LEARN MORE</div>
-                                <div className="button-style"></div>
+                    </div>
+                </div>
+
+                <div className="mobile-version">
+                    {/* Image */}
+                    <div className="stand-out-image">
+                        <img src="images/desktop/image-stand-out.jpg"/>
+                    </div>
+                    {/* Text */}
+                    <div className="stand-out-wrapper">
+                        <div className="stand-out-text">
+                            <div className="stand-out-title">Stand out to the right audience</div>
+                            <div className="stand-out-description">
+                                <p>
+                                    Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, 
+                                    we'll build and extend your brand in digital places.
+                                </p>
+                            </div>
+                            <div className="button-wrapper">
+                                <div className="button-information">
+                                    <div className="button-text">LEARN MORE</div>
+                                    <div className="button-style"></div>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -3,6 +3,7 @@ import './Projects.style.scss';
 
 const Projects = () => {
     return (
+
         <div className="projects-component">
             <div className="projects-image">
                 <div className="image-item">

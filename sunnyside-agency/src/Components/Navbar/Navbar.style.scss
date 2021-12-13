@@ -27,28 +27,36 @@
             font-size: 20px;
         }
 
-        .list-menu {
-            display: flex;
-            align-items: center;
+        .menu-desktop {
+            display: block;
 
-            .list-item {
-                margin-right: 1rem;
-            }
-
-            .list-item-active {
-                color: hsl(212, 27%, 19%);
-                background-color: white;
-                border-radius: 3rem;
-                padding: 0.7rem 1rem;
-                font-family: 'Fraunces', serif;
-                font-weight: 600;
-                cursor: pointer;
-
-                &:hover {
-                    background-color: hsl(200, 100%, 71.2%);
-                    color: white;
+            .list-menu {
+                display: flex;
+                align-items: center;
+    
+                .list-item {
+                    margin-right: 1rem;
+                }
+    
+                .list-item-active {
+                    color: hsl(212, 27%, 19%);
+                    background-color: white;
+                    border-radius: 3rem;
+                    padding: 0.7rem 1rem;
+                    font-family: 'Fraunces', serif;
+                    font-weight: 600;
+                    cursor: pointer;
+    
+                    &:hover {
+                        background-color: hsl(200, 100%, 71.2%);
+                        color: white;
+                    }
                 }
             }
+        }
+
+        .menu-mobile {
+            display: none;
         }
     }
 
@@ -61,5 +69,75 @@
         justify-content: center;
         font-family: 'Fraunces', serif;
         font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar-component {
+        .navbar-image {
+            height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .arrow-icon {
+            position: absolute;
+            top: 15rem;
+            left: 39rem;
+        }
+
+        .navbar-menu {
+            padding: 2rem 1rem;
+            color: white;
+            display: flex;
+
+            .navbar-logo {
+                font-weight: bolder;
+                flex: auto;
+                font-size: 20px;
+            }
+
+            .menu-desktop {
+                display: none;
+            }
+    
+            .menu-mobile {
+                display: block;
+    
+                .mobile-design {
+                    .menu-icon {
+                        color: white;
+                        position: relative;
+                    }
+        
+                    .menu-liste {
+                        position: absolute;
+                        background-color: white;
+                        color: hsl(213, 9%, 39%);
+                        padding: 2rem 3rem;
+
+                        .menu-item {
+                            padding-bottom: 1rem;
+                        }
+        
+                        .special-list {
+                            background-color: hsl(51, 100%, 49%);
+                            color: hsl(212, 27%, 19%);
+                        }
+                    }
+                }
+            }    
+        }
+        
+        .navbar-title {
+            padding-top: 3rem;
+            color: white;
+            font-weight: 900;
+            display: flex;
+            text-align: center;
+            font-family: 'Fraunces', serif;
+            font-size: 40px;
+        }
     }
 }

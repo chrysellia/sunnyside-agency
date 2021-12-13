@@ -1,5 +1,4 @@
 .testimonials-component {
-    height: 100vh;
 
     .testimonials-content {
         padding: 6rem 3rem;
@@ -52,6 +51,72 @@
                     color: hsl(210, 4%, 67%);
                     font-size: 12px;
                     font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .testimonials-component {
+    
+        .testimonials-content {
+            padding: 2rem 3rem;
+    
+            .testimonials-title {
+                color: hsl(213, 9%, 39%);
+                font-weight: 700;
+                font-family: 'Fraunces', serif;
+                text-align: center;
+    
+            }
+            .testimonials-body {
+                padding-top: 2rem;
+                display: flex;
+                flex-direction: column;
+    
+                .testimonials-card {
+                    width: 100%;
+                    padding-bottom: 2rem;
+    
+                    // .card-wrapper {
+                    //     display: flex;
+                    //     align-items: center;
+                    //     justify-content: center;
+                        
+                    // }
+                    
+                    .card-image {
+                        text-align: center;
+                        
+                        img {
+                            border-radius: 3rem;
+                            width: 70px;
+                        }
+                    }
+    
+                    .card-description { 
+                        text-align: center;
+                        color: hsl(232, 10%, 55%);
+                        font-weight: 400;
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                        padding-bottom: 1rem;
+                    }
+    
+                    .card-author {
+                        text-align: center;
+                        font-family: 'Fraunces', serif;
+                        font-weight: 700;
+                        color: hsl(212, 27%, 19%);
+                    }
+    
+                    .author-job {
+                        text-align: center;
+                        color: hsl(210, 4%, 67%);
+                        font-size: 12px;
+                        font-weight: 500;
+                    }
                 }
             }
         }
