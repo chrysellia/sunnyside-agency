@@ -4,6 +4,22 @@ import './Navbar.style.scss';
 import { GrMenu } from 'react-icons/gr'
 
 const Navbar = () => {
+
+    const handleClick = (event) => {
+        if (menuRef.current && !menuRef.current.contains(event.target)) {
+            toggleShow(false);
+        }
+    };
+
+    React.useEffect(() => {
+        document.addEventListener('click', handleClick, true);
+
+        return () => document.removeEventListener('click', handleClick, true);
+    });
+
+    const [show, toggleShow] = React.useState(false);
+    const menuRef = React.useRef(null);
+
     return (
         <div className="navbar-component">
             <div className="navbar-image" style={{backgroundImage:'url(images/desktop/image-header.jpg)'}}>
@@ -29,12 +45,17 @@ const Navbar = () => {
                     {/* Menu mobile */}
                     <div className="menu-mobile">
                         <div className="mobile-design">
-                            <div className="menu-icon" style={{color:'white'}}><GrMenu/></div>
-                            <div className="menu-liste">
-                                <div className="menu-item">About</div>
-                                <div className="menu-item">Services</div>
-                                <div className="menu-item">Projects</div>
-                                <div className="special-list">Contact</div>
+                            <div className="menu-icon" onClick={()=> toggleShow(true)}>
+                                <GrMenu style={{color:'white'}}/>
+                            </div>
+                            <div ref={menuRef} className={`menu-wrapper ${show ? 'show' : 'hide'}`}>
+                                <div className="menu-liste">
+                                    <div className="clippy"></div>
+                                    <div className="menu-item">About</div>
+                                    <div className="menu-item">Services</div>
+                                    <div className="menu-item">Projects</div>
+                                    <div className="special-list">CONTACT</div>
+                                </div>
                             </div>
                         </div>
                     </div>

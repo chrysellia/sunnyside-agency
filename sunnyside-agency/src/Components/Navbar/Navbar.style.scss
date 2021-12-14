@@ -107,25 +107,60 @@
     
                 .mobile-design {
                     .menu-icon {
-                        color: white;
                         position: relative;
                     }
         
-                    .menu-liste {
+                    .menu-wrapper {
                         position: absolute;
-                        background-color: white;
-                        color: hsl(213, 9%, 39%);
-                        padding: 2rem 3rem;
+                        left: 0px;
+                        top: 80px;
+                        width: 100%;
 
-                        .menu-item {
-                            padding-bottom: 1rem;
+                        &.show {
+                            transform: scale(1);
+                            transition: all ease-in 300ms;
+                            transform-origin: top;
                         }
-        
-                        .special-list {
-                            background-color: hsl(51, 100%, 49%);
-                            color: hsl(212, 27%, 19%);
+
+                        &.hide {
+                            transform: scale(1, 0);
+                            transition: all ease-out 300ms;
+                            transform-origin: top;
                         }
-                    }
+
+                        .menu-liste {
+                            position: relative;
+                            height: 225px;
+                            margin: 0 2rem;
+                            background-color: white;
+                            color: hsl(213, 9%, 39%);
+                            font-weight: 300px;
+                            padding: 2rem 3rem;
+                            text-align: center;
+                            padding-top: 2rem;
+
+                            .clippy {
+                                clip-path: polygon(0 100%, 100% 100%, 100% 0);
+                                width: 25px;
+                                height: 25px;
+                                background-color: white;
+                                position: absolute;
+                                right: 0;
+                                top: -20px;  
+                            }
+    
+                            .menu-item {
+                                padding-bottom: 1rem;
+                            }
+            
+                            .special-list {
+                                background-color: hsl(51, 100%, 49%);
+                                color: hsl(212, 27%, 19%);
+                                border-radius: 3rem;
+                                padding: 0.7rem 1rem;
+                            }
+                        }
+                    } 
                 }
             }    
         }
